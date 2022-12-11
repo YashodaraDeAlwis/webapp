@@ -104,8 +104,7 @@ const Widget =() =>{
     const interval = setInterval(() => {
       console.log('This will be called every 5 seconds');
       getCurrentData();
-      
-      const interval = setInterval(() => {
+     
        
         // console.log("Time out happens !")
         
@@ -140,7 +139,7 @@ const Widget =() =>{
             getNewSeries(lasttime, x_acc_val);
             set_data_1(data)
                     previouse_server_count = server_count;
-    }}, 5000);
+    }, 5000);
   
     return () => clearInterval(interval);
   }, []);
